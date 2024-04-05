@@ -6,13 +6,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
 }).addTo(mymap);
 
-// Function to determine color 
+// Function to determine color shades of green 
 function getColor(d) {
     return d > 90 ? '#004d00' :
         d > 70 ? '#006400' :
         d > 50 ? '#228B22' :
         d > 30 ? '#32CD32' :
-        d > 10 ? '#7FFF00' : // Bright red color
+        d > 10 ? '#7FFF00' : 
         '#90EE90';
 }
 
